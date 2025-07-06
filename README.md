@@ -1,9 +1,8 @@
-
 # AI NFT Description Generator
 
 A web application where users can upload an image of an NFT or provide keywords, and the Gemini API generates creative and engaging descriptions, including a name, lore, and rarity traits.
 
-![NFT Generator Screenshot](https://storage.googleapis.com/aip-dev-source-public/assets/nft-generator-screenshot.png)
+![NFT Generator Screenshot](https://i.ibb.co/fd9qZFqW/image.png)
 
 ---
 
@@ -30,8 +29,8 @@ This project is a static web application that runs entirely in the browser. You 
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/YOUR_USERNAME/ai-nft-generator.git
-    cd ai-nft-generator
+    git clone https://github.com/iamaanahmad/AI-NFT-Description-Generator.git
+cd AI-NFT-Description-Generator
     ```
 
 2.  **API Key Configuration (Crucial!)**
@@ -42,12 +41,26 @@ This project is a static web application that runs entirely in the browser. You 
 
     This project is designed to be run in an environment where `process.env.API_KEY` is already defined. For local development or deployment, you will need to ensure this environment variable is available when the application runs. How you do this depends on your hosting provider or local server setup.
 
-3.  **Serve the files:**
-    You can use any simple static file server. If you have Python installed, you can run:
+3.  **Run the development server:**
+    If you are developing or testing locally, use the built-in dev server:
+
+    For Vite:
     ```bash
-    python -m http.server
+    npm install
+    npm run dev
     ```
-    Then, open your browser and navigate to `http://localhost:8000`.
+
+    For Create React App:
+    ```bash
+    npm install
+    npm start
+    ```
+
+    Then, open your browser and navigate to the URL shown in the terminal (usually `http://localhost:5173` for Vite or `http://localhost:3000` for CRA).
+
+    ---
+    **Note:**  
+    `python -m http.server` only works if you have already built the project using `npm run build` and want to serve the static files from the `dist` or `build` folder.
 
 ---
 
